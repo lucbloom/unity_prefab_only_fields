@@ -1,14 +1,14 @@
 # PrefabOnly and InstanceOnly properties
 Include or exclude class field in the Inspector when in Prefab Mode or outside, viewing an Instance of that Prefab.
 
-  [SerializeField, PrefabOnly] Material SpriteMat;
-  [SerializeField, PrefabOnly] Sprite ProgressBarFill;
-  [SerializeField, PrefabOnly] Sprite ProgressBarCap;
-  [SerializeField, PrefabOnly] string LoadingTerm;
+-  [SerializeField, PrefabOnly] Material SpriteMat;
+-  [SerializeField, PrefabOnly] Sprite ProgressBarFill;
+-  [SerializeField, PrefabOnly] Sprite ProgressBarCap;
+-  [SerializeField, PrefabOnly] string LoadingTerm;
 
-  [SerializeField, InstanceOnly] ProgressBarManager Manager;
-  [SerializeField, InstanceOnly] Transform IntanceParent;
-  [SerializeField, InstanceOnly] string CaptionTerm;
+-  [SerializeField, InstanceOnly] ProgressBarManager Manager;
+-  [SerializeField, InstanceOnly] Transform IntanceParent;
+-  [SerializeField, InstanceOnly] string CaptionTerm;
 
 This way, your inspector isn't cluttered with stuff you don't want to (or shouldn't) see.
 Think of PrefabOnly like "private" for the Prefab. 
